@@ -29,8 +29,8 @@ const services = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className="relative w-full h-[90vh] bg-hero bg-center bg-cover rounded-[70%/200px] rounded-tr-none rounded-tl-none">
-        <div className="overlay rounded-[70%/200px] rounded-tr-none rounded-tl-none" />
+      <section className="relative w-full h-[90vh] bg-hero bg-center bg-cover rounded-none lg:rounded-[70%/200px] rounded-tr-none rounded-tl-none">
+        <div className="overlay rounded-none lg:rounded-[70%/200px] rounded-tr-none rounded-tl-none" />
         <div>
           <ParticlesBackground />
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
               <div className="w-[45px] h-[2px] bg-ds_orange" />
             </div>
             <div>
-              <h2 className="font-bold text-white text-[75px] w-full lg:w-[70%] mx-auto leading-[1] mb-[30px]">
+              <h2 className="font-bold text-white text-[45px] lg:text-[75px] w-full lg:w-[70%] mx-auto leading-[1] mb-[30px]">
                 Best Solution And Great Business
               </h2>
             </div>
