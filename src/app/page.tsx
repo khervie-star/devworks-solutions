@@ -29,13 +29,13 @@ const services = [
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <section className="relative w-full h-[90vh] bg-hero bg-center bg-cover rounded-none lg:rounded-[70%/200px] rounded-tr-none rounded-tl-none">
-        <div className="overlay rounded-none lg:rounded-[70%/200px] rounded-tr-none rounded-tl-none" />
+      <section className="relative w-full h-[90vh] bg-hero bg-center bg-cover rounded-none lg:rounded-[70%/200px] lg:rounded-tr-none lg:rounded-tl-none">
+        <div className="overlay rounded-none lg:rounded-[70%/200px] lg:rounded-tr-none lg:rounded-tl-none" />
         <div>
           <ParticlesBackground />
         </div>
         <div className="relative w-full h-full flex justify-center items-center text-center">
-          <div className="mx-auto text-center">
+          <div className="mx-auto text-center px-[20px] lg:px-0">
             <div className="flex items-center justify-center gap-[5px] mb-[25px]">
               <div className="w-[45px] h-[2px] bg-ds_orange" />
               <p className="uppercase text-[14px] font-bold leading-[17px] text-ds_orange">
@@ -129,7 +129,7 @@ export default function Home() {
                 <div
                   className="relative group w-full h-[250px] cursor-pointer"
                   key={i}>
-                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                  <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur opacity-25 transition duration-1000 group-hover:duration-200"></div>
                   <div className="relative  p-[20px] lg:p-[40px] bg-white w-full h-[250px] ring-1 ring-gray-900/5 leading-none flex gap-[25px]">
                     <div>
                       <div className="relative w-[35px] h-[35px]  text-slate-800 group-hover:text-indigo-400 transition duration-200">

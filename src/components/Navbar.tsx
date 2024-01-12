@@ -17,6 +17,8 @@ import {
   PlayCircleIcon,
 } from "@heroicons/react/20/solid";
 import { GoDotFill } from "react-icons/go";
+import logo from "../../public/logo.png";
+import Image from "next/image";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -47,9 +49,7 @@ export const Navbar = () => {
   return (
     <header
       className={`${
-        isScrolled
-          ? "bg-white shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)]"
-          : "bg-transparent"
+        isScrolled ? "bg-transparent backdrop:blur-md" : "bg-transparent"
       } fixed w-full z-50 text-white `}>
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -57,11 +57,9 @@ export const Navbar = () => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Devworks Solutions</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+            <div className="mb-7 h-[42px] w-[145px]">
+              <Image src={logo} alt="Devworks Solutions" />
+            </div>
           </a>
         </div>
         <div className="flex lg:hidden">
