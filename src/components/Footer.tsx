@@ -10,7 +10,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa6";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo_white.png";
 import Image from "next/image";
 
 export const Footer = () => {
